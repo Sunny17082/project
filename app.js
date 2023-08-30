@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://0.0.0.0:27017/blogDB")
+mongoose.connect("mongodb+srv://admin:admin1234@cluster0.fglied8.mongodb.net/blogDB?retryWrites=true&w=majority")
 .then( () => console.log("Connection successful....."))
 .catch( (err) => console.log(err));
 
